@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(FIIII/IMG-20241021-WA0064.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.BALOON{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+}
+.BALOON img{
+    width: 350px;
+    height: 250px;
+    animation:  ballon 5s ;
+    animation-iteration-count:1px ;
+}
+@keyframes ballon{
+    0%{
+        transform: translate(0,0);
+    }
+     100%{
+        transform: translate(0,-700px);
+    opacity: 0;
+    }
+
+
+}
+.BALOON .imm1{
+    animation:  ballon 5s infinite linear;  
+    width: 350px;
+    height: 250px;
+}
+.BALOON .imm2{
+    animation:  ballon 5s infinite linear;  
+    width: 350px;
+    height: 250px;
+}
+.BALOON .imm3{
+    animation:  ballon 5s infinite linear;  
+    width: 350px;
+    height: 250px;
+}
+.BALOON .imm4{
+    animation:  ballon 5s infinite linear;  
+    width: 350px;
+    height: 250px;
+}
+.BALOON .imm5{
+    animation:  ballon 5s infinite linear;  
+    width: 350px;
+    height: 250px;
+}
+.rad{
+    color: blue;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20%;
+}
+div button{
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 10px ;
+    padding: 30px;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: bttn 8s infinite;
+}
+@keyframes bttn{
+    0%{
+opacity: 0;
+background-color: red;
+    }
+    25%{
+        background-color: rgb(30, 255, 0);
+      
+    }
+    50%{
+        background-color: rgb(30, 255, 0);
+        box-shadow: 5px 5px  blue ;
+    }
+    70%{
+        background: linear-gradient( to right rgb(0, 255, 21),rgb(255, 60, 0)); 
+        transform: scale(5);
+    }
+    100%{
+        background: linear-gradient(red,blue); 
+        transform: scale(5);
+        border-radius: 80px ;
+        padding: 43px;
+        margin: auto;
+    }
+}
